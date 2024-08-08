@@ -1,0 +1,124 @@
+/* 
+  Reset default margin, padding, and set box-sizing to border-box for all elements.
+  This ensures that padding and border are included in the element's total width and height.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+  Styling the body element:
+  - Use Flexbox to center the .login-container both vertically and horizontally.
+  - Set background color and height to fill the entire viewport.
+*/
+body {
+    font-family: Arial, sans-serif; /* Set a consistent font family */
+    background-color: #f2f2f2;      /* Light gray background color */
+    height: 100vh;                  /* 100% of the viewport height */
+    margin: 0;                      /* Remove default margin */
+    display: grid;                  /* Use CSS Grid to center the content */
+    place-items: center;            /* Center items horizontally and vertically */
+}
+
+/* 
+  Styling the login container:
+  - Set background, padding, border, and shadow for a card-like appearance.
+  - Limit the width for responsiveness.
+  - Center-align text within the container.
+*/
+.login-container {
+    background-color: #fcfbfd;      /* White background for the form container */
+    padding: 20px;                  /* Padding inside the container */
+    border-radius: 8px;             /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%;                    /* Full width of the parent, but constrained by max-width */
+    max-width: 350px;               /* Maximum width to keep the form compact */
+    text-align: center;             /* Center text inside the container */
+    border: 2px solid #cccccc;      /* Light gray border around the container */
+}
+
+/* 
+  Styling the header:
+  - Set font size, color, and margin for spacing below the header.
+*/
+h1 {
+    margin-bottom: 20px;            /* Space below the header */
+    font-size: 24px;                /* Font size for the header */
+    color: #333333;                 /* Darker gray color for the header text */
+}
+
+/* 
+  Styling labels:
+  - Align text to the left, and add spacing below for clarity.
+*/
+label {
+    display: block;                 /* Make label a block element */
+    margin-bottom: 8px;             /* Space below each label */
+    text-align: left;               /* Align text to the left */
+    color: #666666;                 /* Medium gray color for labels */
+}
+
+/* 
+  Styling input fields:
+  - Set full width, padding, and border.
+  - Ensure border-box sizing for no overflow.
+  - Add margin below each input for spacing.
+*/
+input[type="text"], input[type="password"] {
+    width: 100%;                    /* Full width of the parent container */
+    padding: 10px;                  /* Padding inside the input fields */
+    margin-bottom: 15px;            /* Space below each input field */
+    border: 1px solid #cccccc;      /* Light gray border for input fields */
+    border-radius: 4px;             /* Rounded corners for inputs */
+    box-sizing: border-box;         /* Include padding and border in the width calculation */
+}
+
+/* Checkbox Container Styling */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space below the checkbox */
+    text-align: left;
+}
+
+.checkbox-container input {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+/* 
+  Styling the button:
+  - Full width, padding, and background color for the button.
+  - Add hover effect for better user interaction.
+*/
+button {
+    width: 100%;                    /* Full width of the parent container */
+    padding: 10px;                  /* Padding inside the button */
+    background-color: #9320c1;      /* Green background for the button */
+    color: white;                   /* White text color */
+    border: none;                   /* Remove default border */
+    border-radius: 4px;             /* Rounded corners for the button */
+    cursor: pointer;                /* Change cursor to pointer on hover */
+    font-size: 16px;                /* Font size for the button text */
+}
+
+/* 
+  Button hover effect:
+  - Slightly darker green on hover for visual feedback.
+*/
+button:hover {
+    background-color: #45a049;      /* Darker green background on hover */
+}
+
+/* Forgot Password Link Styling */
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
