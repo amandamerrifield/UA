@@ -1,0 +1,15 @@
+/* Example styling for the Home component */
+.home-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.home-container h1 {
+    color: #4CAF50;
+    font-size: 36px;
+}
+
+.home-container p {
+    font-size: 18px;
+    color: #333;
+}

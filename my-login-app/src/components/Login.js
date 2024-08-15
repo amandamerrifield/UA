@@ -1,11 +1,19 @@
 import React from 'react';
-import './Login.css';  // Import the specific CSS for this component
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate('/home');
+    };
+
+
     return (
         <div className="login-container">
             <h1>Login</h1>
-            <form id="login-form">
+            <form id="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="username">Username:</label>
                 <input type="text" id="username" name="username" required />
 
